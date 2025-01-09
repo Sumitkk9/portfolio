@@ -1,6 +1,6 @@
 import React from "react";
 import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-const Info = ({indexValue,title,info,subtitle,list})=>{
+const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
     return <div className="infoDiv" style={{zIndex:indexValue}}>
         <div>
             <h3 style={{
@@ -38,7 +38,29 @@ const Info = ({indexValue,title,info,subtitle,list})=>{
                  width:"70%"  
             }}>{info}</p>
         }
-            
+           {eduinfo&& eduinfo.map((edu,index)=>(
+            <>
+
+            {index>0 && <SettingsEthernetIcon style={{
+                 color:"#e2e2e2",
+                fontSize:"2rem"
+            }}/>}
+             
+             <h4 style={{
+                color:"#e2e2e2",
+               fontSize:"1rem",
+              
+              
+           }}>{edu.education || edu.Achievements}</h4>
+           <h4 style={{
+                color:"#e2e2e2",
+               fontSize:"0.8rem",
+             
+              
+           }}>{edu.educationInfo}</h4>
+             
+           </>
+           ))} 
         </div>
     </div>
 }

@@ -19,3 +19,63 @@ export const experience = [
         exp: "I designed and developed a fully responsive e-commerce platform using React.js, MUI, and Styled Components, delivering a mobile-first design that improved user engagement by 30%. The project included integrating APIs, resolving UI bugs to enhance functionality and interactivity, and implementing state management with Redux Toolkit to ensure optimal performance."   
     },
 ]
+
+// educational qualification
+
+export const education = [
+    {
+        education: "Master of Computer Applications (MCA)",
+        educationInfo: "Chandigarh University, Mohali (Online Mode) | July 2023 – Present"
+    },
+    {
+        education: "Bachelor of Computer Applications (BCA)",
+        educationInfo: "  Patliputra University, Barh | May 2020 – July 2023"
+    },
+    {
+        education: "Intermediate (PCMB)",
+        educationInfo: "BSEB, Vidya Vihar | March 2018 – March 2020"
+    },
+
+]
+
+export const handson = [
+    {
+        Achievements: "Published an app on Play Store Which got more than a million downloads. (07/2020 - 04/2021)",
+        
+    },
+    {
+        Achievements: "Recognized for completing personal projects demonstrating innovative solutions and creativity in web development.",  
+    },
+   
+
+]
+
+
+// certificates
+
+export const certificates = [
+    {
+        issueDate: "Issued Oct 2024",
+        courseName: "React",
+        certFrom: "Udemy",
+        certIcon:"https://obsessivecoder.gallerycdn.vsassets.io/extensions/obsessivecoder/react-component-explorer/0.0.4/1596324109574/Microsoft.VisualStudio.Services.Icons.Default",
+        certUrl: "https://udemy-certificate.s3.amazonaws.com/image/UC-42a00ef3-e0f8-4f5f-b812-e3fab10b5f1d.jpg"
+    },
+    {
+        issueDate: "Issued jul 2023",
+        courseName: "JavaScript",
+        certFrom: "Great Learning",
+        certIcon:"https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
+        certUrl: "https://www.mygreatlearning.com/certificate/QWIWZZKP"
+    },
+    {
+        issueDate: "Issued Oct 2024",
+        courseName: "HTML,CSS",
+        certFrom: "Udemy",
+        certIcon:"https://files.selar.co/product-images/2023/products/Tetra22/html-css-crash-course-lea-selar.co-6420c0b6379b4.png",
+        certUrl: "https://udemy-certificate.s3.amazonaws.com/image/UC-42a00ef3-e0f8-4f5f-b812-e3fab10b5f1d.jpg"
+    }
+]
+
+
+  

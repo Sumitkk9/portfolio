@@ -30,7 +30,207 @@
     grid-template-columns: 50% 50%;
     padding-left: 4rem;
     padding-right: 4rem;
-    margin-bottom: 17%;
+    height: 100vh;
     position: sticky;
+    
     top: 25%;
+}
+
+/* certcard */
+
+.CertcardDiv{
+    text-align: center;
+    background: white;
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.CertcardDiv:hover{
+    transform:translatey(-10px);
+    transition: ease-in-out 0.5s;
+}
+
+.mediaCard{
+background: transparent;
+}
+.mediaCard>img{
+    border-radius: 200px;
+   
+}
+
+.mediaCard>img:hover{
+    transform:rotateY(360deg);
+    
+    transition: ease-in-out 1s;
+}
+.infodiv{
+    background: transparent;
+}
+.infodiv>h3{
+    line-height: 0%;
+    background: transparent;
+}
+.infodiv>h4{
+    line-height: 0%;
+    font-size: 0.5rem;
+    background: transparent;
+}
+
+.actionDiv{
+    background: transparent;
+}
+.actionDiv>button{
+    padding: 10px;
+    align-items: center;
+    background: #f3f3f3;
+    border:none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+
+.actionDiv>button>span{
+    background: transparent;  
+    font-size: 0.7rem;
+}
+
+/* home cert div */
+.certMainDiv{
+    position: sticky; 
+    top: 25%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 20px;
+}
+.certDiv{
+    position: sticky; 
+    border: 2px dashed white;
+    border-radius: 20px;
+    top: 25%;
+    background: #000;
+    justify-content: center;
+    padding: 40px;
+    padding-left: 4rem;
+    display:grid;
+    grid-template-columns: 20% 20% 20%;
+    
+}
+
+
+/* project Card  */
+.mainCardDev{
+    width: 400px;
+    box-shadow: 0.25px 20px 20px 1px black;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 10px;
+    margin-bottom: 20px;
+  
+}
+.cardHead{
+    height: 300px;
+    
+  
+}
+.cardHead>img{
+   
+    width: 100%;
+    height: 320px;
+    
+}
+
+.tag{
+    position: absolute;
+    margin: 10px;
+    background-color:  #ff8008;
+ 
+    font-weight: bold;
+    color: white;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    border-radius: 20px;
+   
+}
+  
+.contentDiv{
+    position:relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    background: linear-gradient(to top, #000000, #434343);
+    display: grid;
+    grid-template-columns: 47% 6% 47%;
+    z-index: 100;
+    height: 200px;
+ 
+   
+}
+.contentDiv1{
+   background-color: transparent;
+    margin-left: 30px;
+    
+}
+.contentDiv1>h3{
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 0px;
+}
+.contentDiv1>p{
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: rgb(201, 200, 200);
+     padding-top: 0px;
+}
+.contentDiv2{
+    justify-items: center;
+    background-color: transparent;
+    width: 2px;
+    border-right: 1px solid  #ff8008;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contentDiv3{
+ overflow: hidden;
+ margin-top: 20px;
+ margin-left: 10px;
+ background-color: transparent;
+}
+.contentDiv3>h3{
+    color: #ff8008 ;
+    font-size:0.7rem ;
+    line-height: 0.5rem;
+background-color: transparent;
+}
+.contentDiv3>p{
+    color: rgb(201, 200, 200);
+    font-size:0.8rem;
+    background-color: transparent;
+}
+.actionCardDiv{
+    width: 100%;  
+    text-align: center;
+    background:  linear-gradient(to bottom,  #000000, #080807);
+    background-color: #000000;
+}
+.actionCardDiv>button{
+    border:none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 3px 0px black;
+    background:  linear-gradient(to bottom, #ff8008, #d8721f);
 }
