@@ -8,9 +8,25 @@
     align-items: center;
     border-bottom: 1px solid grey;
     padding: 20px;
+    z-index: 1000;
     padding-left: 4rem;
     position: sticky;
     top: 0px;
+}
+
+/* footer */
+
+.footerMainDiv{
+    padding: 20px;
+    padding-left: 4rem;
+}
+
+.footerInfo>h3{
+    color: #e2e2e2;
+}
+.footerInfo>p{
+    color: #e2e2e2;
+    line-height: 1px;
 }
 
 
@@ -32,7 +48,7 @@
     padding-right: 4rem;
     height: 100vh;
     position: sticky;
-    
+    z-index: 0;
     top: 25%;
 }
 
@@ -56,6 +72,8 @@ background: transparent;
 }
 .mediaCard>img{
     border-radius: 200px;
+    width: 100px;
+    height: 100px;
    
 }
 
@@ -72,7 +90,7 @@ background: transparent;
     background: transparent;
 }
 .infodiv>h4{
-    line-height: 0%;
+ 
     font-size: 0.5rem;
     background: transparent;
 }
@@ -100,23 +118,24 @@ background: transparent;
 
 /* home cert div */
 .certMainDiv{
-    position: sticky; 
-    top: 25%;
+    position: relative;
+    z-index: 100;
+   
     padding-left: 4rem;
     padding-right: 4rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .certDiv{
-    position: sticky; 
+    z-index: 10;
+    position: relative;
     border: 2px dashed white;
     border-radius: 20px;
-    top: 25%;
-    background: #000;
+   
     justify-content: center;
     padding: 40px;
     padding-left: 4rem;
     display:grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     
 }
 
@@ -233,4 +252,65 @@ background-color: transparent;
     margin-bottom: 10px;
     box-shadow: 0px 0px 3px 0px black;
     background:  linear-gradient(to bottom, #ff8008, #d8721f);
+}
+
+@media screen and (max-width: 720px) {
+    .headerMainDiv{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        height: 40px;
+        border-bottom: 1px solid grey;
+        z-index: 1000;
+        padding-left: 1rem;
+       padding-top: 0px;
+        position: sticky;
+        top: 0px;
+    }
+    .ProfileDiv{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100%;
+        padding: 1rem;
+    }
+
+    .infoDiv{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 70vh;
+        position: sticky;
+        z-index: 0;
+        align-content: start;
+        top: 15%;
+    }
+
+    /* home cert div */
+.certMainDiv{
+    position: relative;
+    z-index: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 50px;
+
+ 
+}
+.certDiv{
+    z-index: 10;
+    position: relative;
+    border: 2px dashed white;
+    border-radius: 20px;
+    justify-items: center;
+    gap: 10px;
+    display:grid;
+    grid-template-columns: 100%;
+    
+}
+
+.footerMainDiv{
+    padding: 20px;
+    padding-left: 1rem;
+}
+    
 }

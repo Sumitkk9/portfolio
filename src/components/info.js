@@ -1,11 +1,14 @@
 import React from "react";
 import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
 const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
-    return <div className="infoDiv" style={{zIndex:indexValue}}>
+   
+    const smallScreenSize = ()=> window.innerWidth<=900
+
+   return <div className="infoDiv" style={{zIndex:indexValue}}>
         <div>
             <h3 style={{
                 color:"#e2e2e2",
-                fontSize:"2rem",
+                fontSize: smallScreenSize()? "1.5rem" : "2rem",
                 lineHeight:"0px",
                 marginTop:"15px"
             }}>
@@ -19,15 +22,15 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
             }}/>
             <h4 style={{
                  color:"#e2e2e2",
-                fontSize:"1rem",
-                lineHeight:"0px",
+                fontSize: smallScreenSize()? "1rem" :"1rem",
+                
                
             }}>{subtitle}</h4>
 
             {list? <ul style={{
                  color:"#e2e2e2",
                  fontSize:"1rem",
-                 width:"70%"  
+                 width: smallScreenSize()? "100%":"70%"  
             }}>
                 {list.map(li =>   <li>{li}</li>)}
               
@@ -35,7 +38,7 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
             <p style={{
                  color:"#e2e2e2",
                  fontSize:"1rem",
-                 width:"70%"  
+                 width:smallScreenSize()? "100%":"70%" 
             }}>{info}</p>
         }
            {eduinfo&& eduinfo.map((edu,index)=>(

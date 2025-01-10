@@ -5,11 +5,13 @@ import { yourName,role } from "../constants";
 import { resumeUrl,linkedIn,github } from "../constants";
 
 const Profile = () =>{
+
+    const smallScreenSize = ()=> window.innerWidth<=900
     return <div className="ProfileDiv">
         <div>
             <img style={{
-                width:"80%",
-                borderRadius:"120px"
+                width:  smallScreenSize()? "40%": "80%",
+                borderRadius: smallScreenSize()? "200px": "120px"
             }} 
             src={ProfileImg} 
             alt="Profile Img"
@@ -19,16 +21,19 @@ const Profile = () =>{
         <div>
             <h1 style={{
                 color:"#e2e2e2",
-                fontSize:"1.5rem",
+                fontSize: smallScreenSize()? "1rem":"1.5rem",
                
             }}>{yourName}</h1>
             <h2 style={{
                 color:"#e2e2e2",
-                 fontSize:"4rem",
+                 fontSize: smallScreenSize()? "2rem":"4rem",
                   lineHeight:"1px"
             }}>{role}</h2>
-            <div style={{display:"flex"}}>
-                <div style={{marginRight:"2rem"}}>
+            <div style={{display: smallScreenSize()? "grid" :"flex" ,
+                gridTemplateColumns: smallScreenSize()? " 25% 33% 30%" : " 15% 20% 17%",
+                gap:smallScreenSize&& "5px"
+            }}>
+                <div style={{marginRight: smallScreenSize()? "0rem":"2rem"}}>
                 <ColorFullButton
                 title="Resume"
                 clr="#00ffa3"
@@ -38,7 +43,7 @@ const Profile = () =>{
                 />
                 </div>
                
-               <div style={{marginRight:"2rem"}}>
+               <div style={{marginRight:smallScreenSize()? "1rem":"2rem"}}>
                <ColorFullButton
                 title= "linkedin"
                 clr="transparent"

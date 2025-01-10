@@ -4,10 +4,13 @@ import Header from './components/header';
 import Profile from './components/profile';
 import Info from './components/info';
 import Certcard from './components/certcard';
-import ProjectCard from './components/projectCard';
-import { about,skills,experience,education,handson,certificates } from './constants';
+import Footer from './components/footer';
+import BgBlack from "./imgs/bgblack.jpg"
+import {whatsappUrl, mailId,phoneNO, about,skills,experience,education,handson,certificates,projects, linkedIn } from './constants';
 
 function App() {
+  const smallScreenSize = ()=> window.innerWidth<=900
+
   return (
     <>
     <Header/>
@@ -35,20 +38,25 @@ function App() {
           title="Education"
           eduinfo={education}
           />
-           <Info
+          <Info
           title="Hands-On Achievements"
           eduinfo={handson}
           />
+          
+         
 
-          <div className='certMainDiv' >
+       <div style={{position:"relative"}}>
+
+       <div className='certMainDiv'  >
           <h3  style={{
                 color:"#e2e2e2",
-                fontSize:"2rem",
+                fontSize: smallScreenSize()? "1.5rem":"2rem",
                 lineHeight:"0px",
-                marginTop:"15px"
+                marginTop:"15px",
+                marginBottom:"30px"
             }}>Certifications</h3>
          
-          <div className='certDiv'>
+          <div className='certDiv'  style={{backgroundImage: `url(${BgBlack})`}}>
       {certificates.map((cert,index)=>(
         <Certcard
         key={index+3}
@@ -63,7 +71,39 @@ function App() {
     </div>
     </div>
 
+    <div className='certMainDiv' >
+          <h3  style={{
+                color:"#e2e2e2",
+                fontSize: smallScreenSize()? "1.5rem":"2rem",
+                lineHeight:"0px",
+                marginTop:"15px",
+                marginBottom:"30px",
+                zIndex:10
+            }}>Personal Projects</h3>
+         
+          <div className='certDiv'  style={{backgroundImage: `url(${BgBlack})`}}>
+      {projects.map((pjt,index)=>(
+        <Certcard
+        key={index+3}
+        certName={pjt.courseName}
+        certFrom={pjt.certFrom}
+        imgurl={pjt.certIcon}
+        certUrl={pjt.certUrl}
+        
+        />
+      ))}
+    </div>
+    </div>
 
+    <Footer
+    mailid={mailId}
+    phoneno={phoneNO}
+    linkedin={linkedIn}
+    whatsappChat={whatsappUrl}
+    />
+       </div>
+
+     
          
 
 
