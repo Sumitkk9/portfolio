@@ -2,7 +2,7 @@ import React from "react";
 import ColorFullButton from "./button";
 import { resumeUrl } from "../constants";
 import "../components/Style.css"
-import { yourName } from "../constants";
+import { yourName,whatsappUrl } from "../constants";
 
 
 const Header = ()=>{
@@ -45,7 +45,9 @@ const Header = ()=>{
                  cursor:"pointer",
                 padding:"5px",
                 fontSize:"0.8rem"
-            }}>Contact Us</button>
+            }}
+            onClick={()=> window.open(whatsappUrl,"_self")}
+            >Contact Us</button>
         </div>
        
     </div>

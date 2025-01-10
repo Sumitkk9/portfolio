@@ -30,7 +30,7 @@ const Profile = () =>{
                   lineHeight:"1px"
             }}>{role}</h2>
             <div style={{display: smallScreenSize()? "grid" :"flex" ,
-                gridTemplateColumns: smallScreenSize()? " 25% 33% 30%" : " 15% 20% 17%",
+                gridTemplateColumns: smallScreenSize()? " 26% 35% 33%" : " 15% 20% 17%",
                 gap:smallScreenSize&& "5px"
             }}>
                 <div style={{marginRight: smallScreenSize()? "0rem":"2rem"}}>

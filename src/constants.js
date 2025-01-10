@@ -14,7 +14,7 @@ export const linkedIn = "https://www.linkedin.com/in/sumit-pandey-30bb87153/"
 export const github = "https://github.com/Sumitkk9?tab=repositories"
 export const phoneNO = "+91 8051855268"
 export const mailId = "sumitkk135@gmail.com"
-export const whatsappUrl = "https://wa.me/8051855268"
+export const whatsappUrl = "https://wa.me/+918051855268"
 // about
 export const about = "Frontend Developer with proven expertise in creating dynamic and responsive websites using React.js, Material-UI (MUI), and JavaScript. Skilled in delivering user-centric designs and seamless functionality for both mobile and web platforms. Experienced in WordPress development, API integration, and state management using Redux Toolkit. Passionate about learning new technologies to stay competitive in a rapidly evolving digital landscape."
 

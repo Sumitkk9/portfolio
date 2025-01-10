@@ -86,7 +86,7 @@ background: transparent;
     background: transparent;
 }
 .infodiv>h3{
-    line-height: 0%;
+   
     background: transparent;
 }
 .infodiv>h4{
@@ -276,7 +276,7 @@ background-color: transparent;
 
     .infoDiv{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 90%;
         padding-left: 1rem;
         padding-right: 1rem;
         height: 70vh;
@@ -302,15 +302,24 @@ background-color: transparent;
     border: 2px dashed white;
     border-radius: 20px;
     justify-items: center;
+    padding: 10px;
     gap: 10px;
     display:grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     
 }
 
 .footerMainDiv{
     padding: 20px;
     padding-left: 1rem;
+}
+.CertcardDiv{
+    text-align: center;
+    background: white;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
 }
     
 }
