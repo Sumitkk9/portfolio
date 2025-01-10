@@ -1,22 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import ProfileImg from "../imgs/profileimg.jpg"
 import ColorFullButton from "./button";
 import { yourName,role } from "../constants";
 import { resumeUrl,linkedIn,github } from "../constants";
+import Otw from "../imgs/otww.png"
 
 const Profile = () =>{
+
+    const [cg,setCg] = useState(false)
+
+    setTimeout(()=>{setCg(true)},3000)
 
     const smallScreenSize = ()=> window.innerWidth<=900
     return <div className="ProfileDiv">
         <div>
-            <img style={{
+            <img className={cg && "rotImg"} style={{
                 width:  smallScreenSize()? "40%": "80%",
                 borderRadius: smallScreenSize()? "200px": "120px"
             }} 
-            src={ProfileImg} 
+            src=  { cg? Otw : ProfileImg} 
             alt="Profile Img"
             />
+            
         </div>
+        
 
         <div>
             <h1 style={{

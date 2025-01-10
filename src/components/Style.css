@@ -39,6 +39,12 @@
     grid-template-columns: 20% 80%
 }
 
+.rotImg{
+    transform:rotateY(360deg);
+    
+    transition: ease-in-out 1s;
+}
+
 /* info div */
 
 .infoDiv{
