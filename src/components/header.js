@@ -18,7 +18,8 @@ const Header = ()=>{
                 marginRight:"5%",
                 fontSize:"1.3rem",
                 cursor:"pointer",
-                display:"inline"
+                display:"inline",
+                fontFamily:"Wix Madefor Text",
             }}
             onClick={()=> window.open("/","_self")}
             >{yourName}</h1>

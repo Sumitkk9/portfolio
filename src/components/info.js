@@ -10,7 +10,8 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
                 color:"#e2e2e2",
                 fontSize: smallScreenSize()? "1.5rem" : "2rem",
                 lineHeight:"0px",
-                marginTop:"15px"
+                marginTop:"15px",
+                fontFamily:"Wix Madefor Text",
             }}>
                 {title}
             </h3>
@@ -21,6 +22,7 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
                 fontSize:"2rem"
             }}/>
             <h4 style={{
+                fontFamily:'Azeret Mono',
                  color:"#e2e2e2",
                 fontSize: smallScreenSize()? "1rem" :"1rem",
                 
@@ -30,6 +32,7 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
             {list? <ul style={{
                  color:"#e2e2e2",
                  fontSize:"1rem",
+                 fontFamily:"Wix Madefor Text",
                  width: smallScreenSize()? "100%":"70%"  
             }}>
                 {list.map(li =>   <li>{li}</li>)}
@@ -38,6 +41,7 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
             <p style={{
                  color:"#e2e2e2",
                  fontSize:"1rem",
+                 fontFamily:"Wix Madefor Text",
                  width:smallScreenSize()? "100%":"70%" 
             }}>{info}</p>
         }
@@ -54,9 +58,11 @@ const Info = ({indexValue,title,info,subtitle,list,eduinfo})=>{
                fontSize:"1rem",
               
               
+              
            }}>{edu.education || edu.Achievements}</h4>
            <h4 style={{
                 color:"#e2e2e2",
+                fontFamily:"Wix Madefor Text",
                fontSize:"0.8rem",
              
               

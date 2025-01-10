@@ -9,6 +9,7 @@ const Profile = () =>{
 
     const [cg,setCg] = useState(false)
 
+
     setTimeout(()=>{setCg(true)},3000)
 
     const smallScreenSize = ()=> window.innerWidth<=900
@@ -28,11 +29,13 @@ const Profile = () =>{
         <div>
             <h1 style={{
                 color:"#e2e2e2",
+                fontFamily:"Wix Madefor Text",
                 fontSize: smallScreenSize()? "1rem":"1.5rem",
                
             }}>{yourName}</h1>
             <h2 style={{
                 color:"#e2e2e2",
+                fontFamily:"Wix Madefor Text",
                  fontSize: smallScreenSize()? "2rem":"4rem",
                   lineHeight:"1px"
             }}>{role}</h2>

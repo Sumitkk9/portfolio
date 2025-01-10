@@ -14,7 +14,9 @@ const Certcard = ({imgurl,certUrl,certName,certFrom,issueD})=>{
             <img src={imgurl} alt="cert icons"/>
         </div>
         <div className="infodiv">
-            <h3>{certName}</h3>
+            <h3 style={{
+                fontFamily:'Azeret Mono',
+                }}>{certName}</h3>
             <h4>{certFrom}</h4>           
         </div>
         <div className="actionDiv">
