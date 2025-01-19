@@ -35,7 +35,7 @@ export const experience = [
 export const education = [
     {
         education: "Master of Computer Applications (MCA)",
-        educationInfo: "Chandigarh University, Mohali (Online Mode) | July 2023 – Present"
+        educationInfo: "Chandigarh University, Mohali | July 2023 – Present"
     },
     {
         education: "Bachelor of Computer Applications (BCA)",
