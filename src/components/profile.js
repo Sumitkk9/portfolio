@@ -3,7 +3,7 @@ import ProfileImg from "../imgs/profileimg.jpg"
 import ColorFullButton from "./button";
 import { yourName,role } from "../constants";
 import { resumeUrl,linkedIn,github } from "../constants";
-import Otw from "../imgs/otww.png"
+import Otw from "../imgs/otww.jpg"
 
 const Profile = () =>{
 
