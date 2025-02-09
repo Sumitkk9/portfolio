@@ -7,18 +7,28 @@ import Certcard from './components/certcard';
 import Footer from './components/footer';
 import BgBlack from "./imgs/bgblack.jpg"
 import {whatsappUrl, mailId,phoneNO, about,skills,experience,education,handson,certificates,projects, linkedIn } from './constants';
-
+import {motion} from "framer-motion"
 function App() {
   const smallScreenSize = ()=> window.innerWidth<=900
 
   return (
     <>
     <Header/>
-    <Profile/>
-    <Info
-    title="About"
-    subtitle="Brief introduction"
-    info={about} />
+    <motion.div 
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}  // Animate when visible
+            viewport={{ once: true, amount: 0.4 }} // Trigger when 40% is in view
+            transition={{ duration: 1 }}
+            className="p-5 bg-green-500 text-white text-center rounded-lg"
+        >
+         <Profile/>
+        </motion.div>
+  
+       
+        <Info
+          title="About"
+          subtitle="Brief introduction"
+          info={about} />
     <Info
     title="SKILLS"
     subtitle="Technical Skills"
