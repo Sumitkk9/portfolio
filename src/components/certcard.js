@@ -2,14 +2,15 @@ import react from "react"
 import AdsClickIcon from '@mui/icons-material/AdsClick';
 
 const Certcard = ({imgurl,certUrl,certName,certFrom,issueD})=>{
-    return <div className="CertcardDiv">
+    return <div style={{marginBottom:"10px"}} className="CertcardDiv">
        
         <div className="mediaCard">
         <span style={{
             background:"transparent",
             fontSize:"0.3rem",
             position:"absolute",
-            marginLeft:"100px"
+            marginLeft:"100px",
+        
         }}>{issueD}</span>
             <img src={imgurl} alt="cert icons"/>
         </div>

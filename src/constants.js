@@ -3,7 +3,7 @@ import imdb from "./imgs/imdb.png"
 import netflix from "./imgs/netflix.png"
 import tem from "./imgs/tem.png"
 import ot from "./imgs/ot.png"
-
+import rmaker from "./imgs/rm.jpg"
 
 
 
@@ -90,6 +90,12 @@ export const certificates = [
 
 export const projects = [
     {
+        courseName: "Resume Maker(AI)",
+        certFrom: "One click resume maker",
+        certIcon: rmaker,
+        certUrl: "https://resumemaker-mu.vercel.app/"
+    },
+    {
         courseName: "IMDb Clone",
         certFrom: "Built a fully functional IMDb clone ",
         certIcon: imdb,
@@ -99,7 +105,7 @@ export const projects = [
         courseName: "Product Showcasing",
         certFrom: "Showcasing website for Awzing Healthcare Pvt Ltd, which sells medicine",
         certIcon: awzing,
-        certUrl: "https://dev.awzinghealthcare.com/"
+        certUrl: "https://awzinghealthcare.com/"
     },
     {
         courseName: "NetFlix Homepage",
@@ -108,7 +114,7 @@ export const projects = [
         certUrl: "https://netflix-nine-henna-92.vercel.app/"
     },
     {
-        courseName: "Online Test Too",
+        courseName: "Online Test Tool",
         certFrom: "Developed an online quiz tool with leaderboard functionality",
         certIcon: ot,
         certUrl: "https://dlsofficial.com/online-test-code/"
